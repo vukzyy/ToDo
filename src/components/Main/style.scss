@@ -1,0 +1,185 @@
+.main{
+  background: #ff87d5;
+  padding: 20px 30px;
+  border-radius: 20px;
+  grid-gap: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 700px;
+
+  &__container{
+    background: transparent;
+    width: 100%;
+    height: 475px;
+  }
+
+  &__inputBox{
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    column-gap: 30px;
+  }
+
+  &__add{
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    font-weight: 1000;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 50%;
+    padding: 18px 10px;
+    color: white;
+
+    &:hover{
+      background: #000;
+      transition: .5s;
+    }
+  }
+
+  &__input{
+    background: transparent;
+    width: 600px;
+    height: 70px;
+    border: none;
+    border-bottom: 3px solid white;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  &__title{
+    font-size: 25px;
+    background: transparent;
+    font-weight: 800;
+  }
+
+  &__subtitle{
+    background: transparent;
+    margin-top: 10px;
+  }
+
+
+
+  &__todosBox{
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-gap: 20px;
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+    overflow: auto;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+  }
+  &__todosBox::-webkit-scrollbar{
+    width: 0;
+  }
+
+  &__todo{
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid white;
+    padding: 10px;
+
+    &-des{
+      background: transparent;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    &-des.active{
+      text-decoration: line-through white;
+    }
+
+    &-input{
+      width: 400px;
+      height: 32px;
+      background: transparent;
+      border: none;
+      font-size: 22px;
+      font-weight: 700;
+      border-bottom: 2px solid red;
+    }
+  }
+
+  &__buttonBox{
+    background: transparent;
+    column-gap: 15px;
+    display: flex;
+
+    &-edit{
+      background: #8da7be;
+      width: 80px;
+      border-radius: 10px;
+      padding: 7px 20px;
+      border: none;
+      font-size: 17px;
+      font-weight: 400;
+      cursor: pointer;
+      color: white;
+    }
+
+    &-delete{
+      background: #be4d45;
+      width: 80px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      font-size: 17px;
+      font-weight: 400;
+      cursor: pointer;
+      color: white;
+    }
+
+    &-done{
+      background: darkolivegreen;
+      width: 80px;
+      border-radius: 10px;
+      padding: 7px 20px;
+      border: none;
+      font-size: 17px;
+      font-weight: 400;
+      cursor: pointer;
+      color: white;
+    }
+  }
+  &__clear{
+    margin: 0 auto;
+    width: 150px;
+    height: 45px;
+    background: black;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    color: white;
+  }
+  &__Log{
+    margin: 0 auto;
+    width: 150px;
+    height: 45px;
+    background: black;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    cursor: pointer;
+    border-bottom: 3px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    color: white;
+  }
+}
